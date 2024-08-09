@@ -61,7 +61,7 @@ A aplicação possui as seguintes rotas principais:
 
 Clique na imagem abaixo para assistir a uma demonstração interativa do projeto:
 
-[![Assista à demonstração](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://app.arcade.software/share/xUvokWcjOtuUOFQcrNOE)
+[![Assista à demonstração](https://i.imgur.com/9Zed1w4.png)](https://app.arcade.software/share/xUvokWcjOtuUOFQcrNOE)
 
 
 
