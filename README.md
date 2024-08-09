@@ -44,7 +44,7 @@ Para iniciar a aplicação, execute:
 
 Isso iniciará o servidor de desenvolvimento e você poderá acessar a aplicação no navegador em http://localhost:4200.
 
-## 📍 Rotas da Aplicação
+##  Rotas da Aplicação
 
 A aplicação possui as seguintes rotas principais:
 
@@ -55,6 +55,10 @@ A aplicação possui as seguintes rotas principais:
 | `/home`              | Página inicial após o login, exibe lista de vagas e candidaturas |
 | `/listarcandidaturas`| Página para listar candidaturas de uma vaga específica           |
 | `/registrovagas`     | Página para visualizar candidaturas de uma vaga específica       |
+
+## Video Da Aplicação:
+
+
 
 
 
