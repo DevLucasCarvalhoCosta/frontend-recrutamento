@@ -1,7 +1,7 @@
 # Pacto Recrutamento - Frontend
 
-![angular][ANGULAR__BADGE]
-![typescript][TYPESCRIPT__BADGE]
+[TYPESCRIPT__BADGE]: https://img.shields.io/badge/typescript-D4FAFF?style=for-the-badge&logo=typescript
+[ANGULAR__BADGE]: https://img.shields.io/badge/Angular-red?style=for-the-badge&logo=angular
 
 <p align="center">
  <a href="#sobre">Sobre</a> • 
