@@ -1,18 +1,14 @@
 # Pacto Recrutamento - Frontend
 
-[TYPESCRIPT__BADGE]: https://img.shields.io/badge/typescript-D4FAFF?style=for-the-badge&logo=typescript
-[ANGULAR__BADGE]: https://img.shields.io/badge/Angular-red?style=for-the-badge&logo=angular
+![TypeScript](https://img.shields.io/badge/typescript-D4FAFF?style=for-the-badge&logo=typescript)
+![Angular](https://img.shields.io/badge/Angular-red?style=for-the-badge&logo=angular)
 
 <p align="center">
  <a href="#sobre">Sobre</a> • 
  <a href="#começando">Começando</a> • 
- <a href="#rotas">Rotas da Aplicação</a> • 
+ <a href="#rotas-da-aplicacao">Rotas da Aplicação</a> • 
  <a href="#colaboradores">Colaboradores</a> •
  <a href="#contribuir">Contribuir</a>
-</p>
-
-<p align="center">
-    <img src="./.github/home.png" alt="Imagem Exemplo" width="400px">
 </p>
 
 ## 📌 Sobre
