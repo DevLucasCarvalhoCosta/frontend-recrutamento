@@ -1,27 +1,67 @@
-# FrontendRecrutamento
+# Pacto Recrutamento - Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+![angular][ANGULAR__BADGE]
+![typescript][TYPESCRIPT__BADGE]
 
-## Development server
+<p align="center">
+ <a href="#sobre">Sobre</a> • 
+ <a href="#começando">Começando</a> • 
+ <a href="#rotas">Rotas da Aplicação</a> • 
+ <a href="#colaboradores">Colaboradores</a> •
+ <a href="#contribuir">Contribuir</a>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<p align="center">
+    <img src="./.github/home.png" alt="Imagem Exemplo" width="400px">
+</p>
 
-## Code scaffolding
+## 📌 Sobre
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Este projeto é a interface frontend para a aplicação de recrutamento "Pacto". Desenvolvido com Angular e TypeScript, a aplicação permite o gerenciamento de usuários e vagas, além de suportar funcionalidades de login e cadastro.
 
-## Build
+## 🚀 Começando
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Aqui está um guia para começar a rodar o projeto localmente.
 
-## Running unit tests
+### Pré-requisitos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [NodeJS](https://nodejs.org/) (recomendado versão 16 ou superior)
+- [Git](https://git-scm.com/)
+- [Angular CLI](https://angular.io/cli) (recomendado versão 15 ou superior)
 
-## Running end-to-end tests
+### Clonagem
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para clonar o projeto, utilize o seguinte comando:
 
-## Further help
+      git clone https://github.com/lucaspk91/recrutamento-frontend.git
+      cd recrutamento-frontend
+    
+Instalando Dependências
+Instale as dependências do projeto com o comando:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+       npm install
+
+Iniciando o Projeto
+Para iniciar a aplicação, execute:
+
+      npm start
+
+Isso iniciará o servidor de desenvolvimento e você poderá acessar a aplicação no navegador em http://localhost:4200.
+
+## 📍 Rotas da Aplicação
+
+A aplicação possui as seguintes rotas principais:
+
+| Rota                 | Descrição                                                        |
+|----------------------|------------------------------------------------------------------|
+| `/login`             | Página de login para autenticação de usuários                    |
+| `/registrousuarios`  | Página de cadastro de novos usuários                             |
+| `/home`              | Página inicial após o login, exibe lista de vagas e candidaturas |
+| `/listarcandidaturas`| Página para listar candidaturas de uma vaga específica           |
+| `/registrovagas`     | Página para visualizar candidaturas de uma vaga específica       |
+
+
+
+
+
+    
