@@ -1,0 +1,12 @@
+<app-default-login-layout title="Faça login em sua conta" primaryBtnText="Conecte-se agora" (submit)="submit()"
+    (navigate)="navigate()" [disablePrimaryBtn]="!loginForm.valid">
+    <form [formGroup]="loginForm">
+        <app-primary-input formControlName="username" inputName="username" label="Username" placeholder="">
+            <img src="/assets/svg/email-icon.svg" />
+        </app-primary-input>
+        <app-primary-input formControlName="password" inputName="password" type="password" label="Sua senha">
+            <img src="/assets/svg/password-icon.svg" />
+        </app-primary-input>
+        <span>Esqueceu sua senha?</span>
+    </form>
+</app-default-login-layout>

@@ -1,0 +1,22 @@
+<div class="job-registration-container">
+    <h1>Cadastro de Vaga</h1>
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="titulo">Título:</label>
+            <input id="titulo" formControlName="titulo" type="text" />
+            <div *ngIf="title?.invalid && (title?.dirty || title?.touched)" class="error">
+                <div *ngIf="title?.errors?.['required']">Título é obrigatório.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" formControlName="descricao"></textarea>
+            <div *ngIf="description?.invalid && (description?.dirty || description?.touched)" class="error">
+                <div *ngIf="description?.errors?.['required']">Descrição é obrigatória.</div>
+            </div>
+        </div>
+
+        <button type="submit" [disabled]="registrationForm.invalid">Cadastrar</button>
+    </form>
+</div>

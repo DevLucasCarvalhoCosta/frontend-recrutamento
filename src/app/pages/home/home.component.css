@@ -1,0 +1,150 @@
+.home-container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    /* Fontes padrão para um design mais limpo */
+}
+
+.side-menu {
+    width: 250px;
+    background-color: #ffffff;
+    /* Branco para um design limpo */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    /* Sombra mais suave */
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+.menu-items {
+    width: 100%;
+}
+
+.menu-items ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-items li {
+    margin: 15px 0;
+    /* Espaço maior entre itens */
+}
+
+.menu-items a {
+    position: relative;
+    z-index: 10;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    /* Texto escuro para contraste */
+    font-weight: 500;
+    /* Peso de fonte um pouco mais leve */
+    padding: 12px 20px;
+    /* Mais espaçamento interno */
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    /* Centraliza o texto */
+
+}
+
+.menu-items a:hover {
+    background-color: #007bff;
+    /* Cor de destaque para hover */
+    color: #ffffff;
+    /* Texto branco ao passar o mouse */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+    /* Fundo claro para contraste */
+    overflow-y: auto;
+    /* Permite rolar o conteúdo se necessário */
+}
+
+.vaga-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.vaga-card {
+    background-color: #ffffff;
+    /* Cartões brancos para contraste */
+    border: 1px solid #e0e0e0;
+    /* Borda leve */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra mais forte */
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    /* Habilita o uso de flexbox */
+    flex-direction: column;
+    /* Organiza os itens em coluna */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    text-align: center;
+    /* Centraliza o texto dentro do cartão */
+}
+
+.vaga-card:hover {
+    transform: translateY(-5px);
+    /* Levanta o cartão ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Sombra mais forte ao passar o mouse */
+}
+
+.vaga-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    /* Tamanho da fonte maior para os títulos */
+    color: #333;
+    /* Cor escura para os títulos */
+}
+
+.vaga-card p {
+    color: #666;
+    /* Texto mais claro para a descrição */
+}
+
+button {
+    background-color: #007bff;
+    /* Cor de fundo para o botão */
+    color: #ffffff;
+    /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 18px;
+}
+
+.logout-container {
+    margin-top: 240px;
+    /* Faz com que o botão de logout fique na parte inferior */
+    padding: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Cor de fundo ao passar o mouse */
+}

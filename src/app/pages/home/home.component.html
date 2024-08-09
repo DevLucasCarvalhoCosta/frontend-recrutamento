@@ -1,0 +1,34 @@
+<div class="home-container">
+    <aside class="side-menu">
+        <div class="logo-container">
+            <img src="/assets/svg/logo_pacto.png" alt="Pacto Logo" class="logo" />
+        </div>
+        <nav class="menu-items">
+            <ul>
+                <li>
+                    <button (click)="navigateTo('/registrousuarios')">Cadastro de Usuários</button>
+                </li>
+                <li>
+                    <button (click)="navigateTo('/registrovagas')">Cadastro de Vagas</button>
+                </li>
+                <li>
+                    <button (click)="navigateTo('/listarcandidaturas')">Listagem de candidaturas</button>
+                </li>
+            </ul>
+            <div class="logout-container">
+                <button (click)="logout()">Logout</button>
+            </div>
+
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="vaga-list-container">
+            <div *ngFor="let vaga of vagas" class="vaga-card">
+                <h3>{{ vaga.titulo }}</h3>
+                <p>{{ vaga.descricao }}</p>
+                <button (click)="candidatar(vaga.id)">Candidatar-se</button>
+            </div>
+        </div>
+    </main>
+</div>

@@ -1,0 +1,22 @@
+<main>
+    <section class="form-section">
+        <img src="/assets/svg/logo_pacto.png" />
+        <h2>{{ title }}</h2>
+        <ng-content></ng-content>
+        <div class="btn-wrapper">
+            <button class="btn-primary" (click)="submit()" [disabled]="disablePrimaryBtn">
+                {{ primaryBtnText }}
+            </button>
+            <div class="divider">
+                <div></div>
+
+                <div></div>
+            </div>
+
+        </div>
+    </section>
+    <section class="main-section">
+        <h1>A procura de Talentos!</h1>
+        <img src="/assets/svg/1758159.svg" />
+    </section>
+</main>

@@ -1,0 +1,52 @@
+<div class="home-container">
+    <aside class="side-menu">
+        <div class="logo-container">
+            <img src="/assets/svg/logo_pacto.png" alt="Pacto Logo" class="logo" />
+        </div>
+        <nav class="menu-items">
+            <ul>
+                <li>
+                    <button (click)="navigateTo('/registrousuarios')">Cadastro de Usuários</button>
+                </li>
+                <li>
+                    <button (click)="navigateTo('/registrovagas')">Cadastro de Vagas</button>
+                </li>
+            </ul>
+            <div class="logout-container">
+                <button (click)="logout()">Logout</button>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div *ngIf="!selectedVagaId">
+            <div *ngIf="loading" class="loading-message">Carregando vagas...</div>
+            <div *ngIf="error" class="error-message">{{ error }}</div>
+            <div *ngIf="!loading && !error">
+                <h2>Lista de Vagas</h2>
+                <div class="vaga-list-container">
+                    <div *ngFor="let vaga of vagas" class="vaga-card">
+                        <h3>{{ vaga.titulo }}</h3>
+                        <p>{{ vaga.descricao }}</p>
+                        <button (click)="showCandidaturas(vaga.id)">Ver Candidatos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="selectedVagaId">
+            <div *ngIf="loading" class="loading-message">Carregando candidaturas...</div>
+            <div *ngIf="error" class="error-message">{{ error }}</div>
+            <div *ngIf="!loading && !error">
+                <h2>Candidaturas para a Vaga ID: {{ selectedVagaId }}</h2>
+                <div class="vaga-list-container">
+                    <div *ngFor="let candidatura of candidaturas" class="vaga-card">
+                        <p>ID da Candidatura: {{ candidatura.id }}</p>
+                        <p class="user-name">Nome do Usuário: {{ candidatura.usuario.username }}</p>
+                    </div>
+                </div>
+                <button class="back-button" (click)="selectedVagaId = null">Voltar</button>
+            </div>
+        </div>
+    </main>
+</div>

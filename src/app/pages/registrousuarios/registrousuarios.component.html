@@ -1,0 +1,32 @@
+<div class="user-registration-container">
+    <h1>Cadastro de Usuário</h1>
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="username">Nome de Usuário:</label>
+            <input id="username" formControlName="username" type="text" />
+            <div *ngIf="username?.invalid && (username?.dirty || username?.touched)" class="error">
+                <div *ngIf="username?.errors?.['required']">Nome de usuário é obrigatório.</div>
+                <div *ngIf="username?.errors?.['minlength']">Nome de usuário deve ter pelo menos 3 caracteres.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Senha:</label>
+            <input id="password" formControlName="password" type="password" />
+            <div *ngIf="password?.invalid && (password?.dirty || password?.touched)" class="error">
+                <div *ngIf="password?.errors?.['required']">Senha é obrigatória.</div>
+                <div *ngIf="password?.errors?.['minlength']">Senha deve ter pelo menos 6 caracteres.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="role">Função:</label>
+            <select id="role" formControlName="role">
+                <option value="USER">Usuário</option>
+                <option value="ADMIN">Administrador</option>
+            </select>
+        </div>
+
+        <button type="submit" [disabled]="registrationForm.invalid">Registrar</button>
+    </form>
+</div>
