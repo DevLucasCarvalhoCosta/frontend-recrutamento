@@ -4,10 +4,10 @@
 ![Angular](https://img.shields.io/badge/Angular-red?style=for-the-badge&logo=angular)
 
 <p align="center">
- <a href="#sobre">Sobre</a> • 
- <a href="#começando">Começando</a> • 
- <a href="#rotas-da-aplicacao">Rotas da Aplicação</a> • 
- <a href="#colaboradores">Colaboradores</a> •
+ <a href="#sobre">Sobre</a>• 
+ <a href="#começando">Começando</a>• 
+ <a href="#rotas-da-aplicacao">Rotas da Aplicação</a>• 
+ <a href="#colaboradores">Colaboradores</a>•
  <a href="#contribuir">Contribuir</a>
 </p>
 
