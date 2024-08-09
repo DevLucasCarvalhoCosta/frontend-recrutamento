@@ -56,8 +56,12 @@ A aplicação possui as seguintes rotas principais:
 | `/listarcandidaturas`| Página para listar candidaturas de uma vaga específica           |
 | `/registrovagas`     | Página para visualizar candidaturas de uma vaga específica       |
 
-## Video Da Aplicação:
 
+## Demonstração do Projeto
+
+Clique na imagem abaixo para assistir a uma demonstração interativa do projeto:
+
+[![Assista à demonstração](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://app.arcade.software/share/xUvokWcjOtuUOFQcrNOE)
 
 
 
