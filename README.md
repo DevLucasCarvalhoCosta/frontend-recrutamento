@@ -13,7 +13,7 @@
 
 ## 📌 Sobre
 
-Este projeto é a interface frontend para a aplicação de recrutamento "Pacto". Desenvolvido com Angular e TypeScript, a aplicação permite o gerenciamento de usuários e vagas, além de suportar funcionalidades de login e cadastro.
+Este projeto é a interface frontend para a aplicação de recrutamento "Pacto". Desenvolvido com Angular e TypeScript, a aplicação tem autenticação e autorização das rotas e permite a gestão de usuários, vagas e candidaturas.
 
 ## 🚀 Começando
 
